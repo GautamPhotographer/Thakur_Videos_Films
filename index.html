@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Gautam Photographer</title>
+  <meta name="description" content="Gautam Photography - Wedding, Engagement, Birthday & Event Photographer. Call/WhatsApp: 8340360570" />
+  <style>
+    :root{
+      --accent:#fbce08;
+      --dark:#1968e9;
+      --muted:#242629;
+      --card:#dd2121;
+      --glass: rgba(216, 5, 5, 0.06);
+      font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;background:linear-gradient(180deg,#ee5407 0%, #1d1717 100%);color:#e9ecf0;line-height:1.5}
+    .container{max-width:1100px;margin:0 auto;padding:24px}
+    header{display:flex;align-items:center;justify-content:space-between;padding:12px 0}
+    .brand{display:flex;gap:12px;align-items:center}
+    .logo{width:56px;height:56px;border-radius:10px;background:linear-gradient(135deg,var(--accent),#e5590d);display:flex;align-items:center;justify-content:center;font-weight:700;color:#eae4e4}
+    nav a{color:inherit;text-decoration:none;margin-left:18px;font-weight:600}
+
+    .hero{display:grid;grid-template-columns:1fr 420px;gap:28px;align-items:center;padding:28px 0}
+    .hero h1{font-size:32px;margin:0 0 8px}
+    .hero p{color:var(--muted);margin:0 0 18px}
+    .cta{display:flex;gap:10px;align-items:center}
+    .btn{background:var(--accent);color:#140a0a;padding:12px 16px;border-radius:10px;text-decoration:none;font-weight:700}
+    .btn.outline{background:transparent;border:2px solid rgba(231, 29, 29, 0.08);color:inherit}
+
+    .card{background:rgba(154, 53, 53, 0.04);padding:18px;border-radius:14px;box-shadow:0 6px 20px rgba(2,6,23,0.6)}
+
+    .services{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:16px;margin-top:18px}
+    .service{padding:14px;border-radius:12px;background:linear-gradient(180deg, rgba(212, 28, 28, 0.02), rgba(183, 13, 13, 0.01));}
+    .service h4{margin:0 0 8px}
+    .gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap-top:12px}
+    .gallery img{width:100%;height:120px;object-fit:cover;border-radius:8px}
+
+    section{margin-top:28px}
+    .two-col{display:grid;grid-template-columns:1fr 360px;gap:20px}
+    footer{border-top:1px solid rgb(128, 80, 80);padding:18px 0;margin-top:28px;color:var(--muted);display:flex;justify-content:space-between;align-items:center}
+
+    /* responsive */
+    @media (max-width:880px){
+      .hero{grid-template-columns:1fr;}
+      .two-col{grid-template-columns:1fr}
+      header{flex-direction:column;gap:10px;align-items:flex-start}
+    }
+
+    /* small utilities */
+    .muted{color:var(--muted)}
+    .phone{font-weight:8000}
+    .pill{display:inline-block;padding:6px 10px;border-radius:999px;background:rgba(255,255,255,0.03)}
+    input,textarea{width:100%;padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,0.04);background:transparent;color:inherit}
+    label{display:block;margin-bottom:6px;font-weight:600}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <img src="DSC_7860.JPG" alt="Gautam Photographer" style="width:56px;height:56px;border-radius:10px;object-fit:cover">
+        <div class="logo">GK</div>
+        <div>
+          <div style="font-weight:800">Gautam Photographer</div>
+          <div class="muted" style="font-size:13px">Wedding • Engagement • Birthday • Events</div>
+        </div>
+      </div>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div>
+        <h1>Hello Me — <span style="color:var(--accent)">Gautam Photographer</span></h1>
+        <p class="box-shadow">Professional photography for weddings, engagements, birthday parties and public events. Candid moments, cinematic shots and personalized all event shoot.</p>
+        <div class="cta">
+          <a class="btn" href="tel:8340360570">Call: 8340360570</a>
+          <a class="btn" href="https://wa.me/918340360570" target="click" rel="noopener">WhatsApp</a>
+        </div>
+
+        <div class="services" style="margin-top:20px">
+          <div class="service card">
+            <h4>Wedding Photography</h4>
+            <div class="box-shadow">Full-day coverage, candid + traditional, album & drone (optional)</div>
+          </div>
+          <div class="service card">
+            <h4>Engagement / Pre-wedding</h4>
+            <div class="boxside">Outdoor & studio shoots, theme-based ideas</div>
+          </div>
+          <div class="service card">
+            <h4>Birthday Parties</h4>
+            <div class="box-shadow">Kids & adults, cake-cutting, candid moments</div>
+          </div>
+          <div class="service card">
+            <h4>Public / Corporate Events</h4>
+            <div class="boxside">Stage coverage, event highlights, reportage</div>
+          </div>
+        </div>
+      </div>
+
+      <aside class="card">
+        <div style="font-weight:800;font-size:18px">Quick Booking</div>
+        <div class="box-shadow" style="margin-top:6px">Call or WhatsApp to check availability. Replace email in code with your actual address if you want email bookings.</div>
+        <ul style="margin:12px 0;padding-left:18px;color:var(--boxside)">
+          <li>Starting price: Flexible — contact for packages</li>
+          <li>Advance required to confirm booking</li>
+        </ul>
+        <div style="margin-top:12px;display:flex;gap:8px">
+          <a class="btn" href="tel:8340360570">Call Now</a>
+          <a class="btn" href="#contact">Book Online</a>
+        </div>
+      </aside>
+    </section>
+
+    <section id="about" class="card">
+      <h2>About Gautam</h2>
+      <p class="boxside">Main Gautam hoon — an experienced photographer focusing on capturing emotions, light and the small candid moments jo baad mein sabse zyada yaad aate hain. Chahe shaadi ho, engagement ya birthday — hum aapke day ko natural aur cinematic andaaz mein capture karte hain.</p>
+    </section>
+
+    <section id="services">
+      <h2>Services & Packages</h2>
+      <div class="two-col">
+        <div>
+          <div class="card">
+            <h3>Popular Packages</h3>
+            <ul class="box-shadow" style="margin-top:6px">
+              <li><strong>Wedding Full Day:</strong> Candid + Traditional + Album + (Drone optional)</li>
+              <li><strong>Half Day:</strong> Events like roka, reception, small weddings</li>
+              <li><strong>Engagement / Pre-wedding:</strong> 2–4 hour outdoor session</li>
+              <li><strong>Birthday Coverage:</strong> 2–5 hour packages, photographer + assistant (on request)</li>
+            </ul>
+          </div>
+
+          <div class="card" style="margin-top:12px">
+            <h3>Extras</h3>
+            <div class="boxside">Photo albums, prints, extended hours, additional photographers, and quick highlight videos available on request.</div>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3>Customer Care</h3>
+          <p class="boxside">Booking & queries: call or WhatsApp anytime. Hum timely replies denge aur aapke event ko smoothly plan karne mein madad karenge.</p>
+          <p style="margin-top:8px"><span class="pill phone">Phone: <a href="tel:8340360570" style="color:inherit;text-decoration:none">8340360570</a></span></p>
+          <p style="margin-top:6px" class="muted">Email: <em>gk2564848@gmail.com</em></p>
+        </div>
+      </div>
+    </section>
+
+    <section id="gallery">
+      <h2>Gallery</h2>
+      <div class="gallery">
+        <!-- Replace src with your own images -->
+         <img src="wedding.jpg" alt="gallery 3">
+         <img src="haldi.jpg" alt="haldi">
+        <img src="birthday.webp" alt="gallery ">
+        <img src="kanyad.jpg" alt="gallery">
+        <img src="bride.jpg" alt="gallery ">
+        <img src="kanya.jpg" alt="gallery">
+        <img src="DSC_7860.JPG" alt="gallery">
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact & Booking Form</h2>
+      <div class="two-col">
+        <div class="card">
+          <form id="contactForm">
+            <label for="name"></label>Your Naam</label>
+            <input id="name" name="name" placeholder="Enter your name" required>
+
+            <label for="phone">Phone</label>
+            <input id="phone" name="phone" placeholder=" your phone no.  " value="" required>
+
+            <label for="email">Email (optional)</label>
+            <input id="email" name="email" placeholder=" your email id  " value=" ">
+
+            <label for="message">Message / Event Details</label>
+            <textarea id="message" name="message" rows="4" placeholder="Date, venue, package interest, etc..." required></textarea>
+
+            <div style="margin-top:10px;display:flex;gap:8px">
+              <button type="submit" class="btn">Send Booking Request</button>
+              <a class="btn check" href="tel:8340360570">Call</a>
+            </div>
+            <p id="formStatus" class="boxside" style="margin-top:8px;font-size:14px"></p>
+          </form>
+        </div>
+
+        <aside class="card">
+          <h3>Alternative Contact</h3>
+          <p class="boxside">Call/WhatsApp: <strong>8340360570</strong></p>
+          <p class="boxside">Or email: <em>gk2564848@gmail.com</em></p>
+          <div style="margin-top:12px">
+            <a class="btn" href="https://wa.me/918340360570" target="_blank" rel="noopener">Message on WhatsApp</a>
+            <a class="noBtn" href="https://accountscenter.instagram.com/profiles/17841465825329975/" target ="black" rel=" noopener">instagram</a>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <footer>
+      <div>© <span id="year"></span> Gautam Photography</div>
+      <div class="boxside">Designed for quick deployment — replace demo images & emails with your assets.</div>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Simple contact form: opens mail client with details (replace email before publishing)
+    const form = document.getElementById('contactForm');
+    form.addEventListener('submit', function(e){
+      e.preventDefault();
+      const name = document.getElementById('name').value.trim();
+      const phone = document.getElementById('phone').value.trim();
+      const email = document.getElementById('email').value.trim();
+      const msg = document.getElementById('message').value.trim();
+      const recipient = 'gk2564848@gmail.com'; // <-- change to real email
+      const subject = encodeURIComponent('Booking Request from ' + name);
+      const body = encodeURIComponent('Name: '+name+'\nPhone: '+phone+'\nEmail: '+email+'\n\nDetails:\n'+msg);
+      // If user hasn't set an email, still open mail client to recipient
+      window.location.href = `mailto:${recipient}?subject=${subject}&body=${body}`;
+      document.getElementById('formStatus').textContent = 'Mail client opened — please send the email to confirm booking.';
+    });
+    
+  </script>
+</body>
+</html>
